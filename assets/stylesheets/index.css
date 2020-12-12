@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+#hero-image {
+}
+
+#hero-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 5px;
+}
+
+#navbar .nav-item {
+  margin: 0 15px;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

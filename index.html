@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zack Oakley</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/index.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div id="hero-container">
+        <img id="hero-image" src="assets/images/zack_header.jpg">
+      </div>
+      <div id="navbar">
+        <div class="nav-item" data-content-id="home" href="">HOME</div>
+        <div class="nav-item" data-content-id="music" href="">MUSIC</div>
+        <div class="nav-item" data-content-id="videos" href="">VIDEOS</div>
+        <div class="nav-item" data-content-id="kommune-records" href="">KOMMUNE RECORDS</div>
+        <div class="nav-item" data-content-id="production" href="">PRODUCTION</div>
+      </div>
+      <div id="nav-content">
+        <div id="home" class="nav-page">
+          <h2>HOME</h2>
+
+          <p>I am a DIY musician, engineer and producer. Trying my best. Thanks for dropping by! xoxo</p>
+        </div>
+
+        <div id="music" class="nav-page hidden">
+          <h2>MUSIC</h2>
+        </div>
+
+        <div id="videos" class="nav-page hidden">
+          <h2>VIDEOS</h2>
+        </div>
+
+        <div id="kommune-records" class="nav-page hidden">
+          <h2>KOMMUNE RECORDS</h2>
+        </div>
+
+        <div id="production" class="nav-page hidden">
+          <h2>PRODUCTION</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.nav-item').click(function(event) {
+      // don't follow the link
+      event.preventDefault();
+      // hide all nav pages
+      $('.nav-page').addClass('hidden');
+      // show the appropriate nav page
+      $(`#${ $(this).data('content-id') }`).removeClass('hidden');
+    })
+  })
+</script>
