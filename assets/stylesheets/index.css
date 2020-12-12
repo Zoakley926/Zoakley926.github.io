@@ -45,6 +45,26 @@ p {
   cursor: pointer;
 }
 
+#hero-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+}
+
+#hero-content {
+  position: relative;
+}
+
+.hero-button {
+  width: 32px;
+  float: right;
+}
+
+.hero-button img {
+  width: 32px;
+}
+
 .hidden {
   display: none;
 }
