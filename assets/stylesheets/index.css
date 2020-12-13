@@ -17,6 +17,7 @@ p {
 #content {
   max-width: 1024px;
   margin: 0 auto;
+  overflow-x:hidden;
 }
 
 #hero-image {
@@ -103,6 +104,15 @@ p {
     flex-wrap: wrap;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .hero-button {
+    width: 22px;
+    padding: 0 10px;
+  }
+
+  .hero-button img {
+    width: 22px;
   }
 
   .hidden-mobile {
