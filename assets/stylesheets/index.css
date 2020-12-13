@@ -54,6 +54,11 @@ p {
 
 #hero-content {
   position: relative;
+  height: 300px;
+  width: 100%;
+  background: url("../images/zack_header.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 #nav-content {
