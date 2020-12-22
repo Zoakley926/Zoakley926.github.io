@@ -81,6 +81,7 @@ a, a:hover, a:focus {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  display: none;
 }
 
 #hero-content {
@@ -126,6 +127,16 @@ a, a:hover, a:focus {
   }
 }
 
+@media (max-width: 800px) {
+  #hero-buttons {
+    display: flex;
+  }
+
+  #nav-buttons {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
 
   #hero-content {
@@ -146,9 +157,12 @@ a, a:hover, a:focus {
   }
 
   #navbar {
-    flex-wrap: wrap;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  #navbar-items {
+    flex-wrap: wrap;
   }
 
   .hero-button {
