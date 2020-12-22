@@ -14,6 +14,19 @@
         <img src="assets/images/zack_header_mobile.jpg" id="mobile-hero-image">
 
         <div id="hero-buttons">
+
+        </div>
+      </div>
+
+      <div id="navbar">
+        <div id="navbar-items">
+          <div class="nav-item" data-content-id="home">HOME</div>
+          <div class="nav-item" data-content-id="music">MUSIC</div>
+          <div class="nav-item" data-content-id="videos">VIDEOS</div>
+          <div class="nav-item" data-content-id="kommune-records">KOMMUNE</div>
+          <div class="nav-item" data-content-id="production">CONTACT</div>
+        </div>
+        <div id="nav-buttons">
           <!-- BANDCAMP -->
           <a class="hero-button" href="https://zackoakley.bandcamp.com/">
             <img src="assets/images/bandcamp-button-bc-circle-aqua-512.png">
@@ -32,21 +45,27 @@
           </a>
         </div>
       </div>
-
-      <div id="navbar">
-        <div class="nav-item" data-content-id="home" href="">HOME</div>
-        <div class="nav-item" data-content-id="music" href="">MUSIC</div>
-        <div class="nav-item" data-content-id="videos" href="">VIDEOS</div>
-        <div class="nav-item" data-content-id="kommune-records" href="">KOMMUNE</div>
-        <div class="nav-item" data-content-id="production" href="">CONTACT</div>
-      </div>
       <div id="nav-content">
         <div id="home" class="nav-page">
           <h2>HOME</h2>
 
           <p>First single Fever / Babylon out January 1st 2021!</p>
-          <p>Fever - <a href="https://www.youtube.com/watch?v=h2Dkm8EZHds">https://www.youtube.com/watch?v=h2Dkm8EZHds</a></p>
-          <p>Babylon - <a href="https://www.youtube.com/watch?v=p8hcl5_hIps">https://www.youtube.com/watch?v=p8hcl5_hIps</a></p>
+          <div class="videos-container">
+            <!-- FEVER VIDEO -->
+            <div class="video-wrapper">
+              <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/h2Dkm8EZHds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <!-- BABYLON VIDEO -->
+            <div class="video-wrapper">
+              <a href="https://www.youtube.com/watch?v=p8hcl5_hIps&feature=emb_title">
+                <div class="video-container">
+                  <iframe style="pointer-events:none;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/p8hcl5_hIps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
         <div id="music" class="nav-page hidden">
@@ -57,28 +76,36 @@
         <div id="videos" class="nav-page hidden">
           <h2>VIDEOS</h2>
 
-          <p>Fever - <a href="https://www.youtube.com/watch?v=h2Dkm8EZHds">https://www.youtube.com/watch?v=h2Dkm8EZHds</a></p>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/h2Dkm8EZHds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
 
         <div id="kommune-records" class="nav-page hidden">
           <h2>KOMMUNE RECORDS</h2>
 
-          <p>Hello! It's Zack here again. I started Kommune Records as an outlet to release my music. I have no idea how far this idea will go but I am committed to giving it my best shot. Up until this point I have been mostly a guitarist and songwriter playing around San Diego and my recordings have been released by my friends at Tee Pee Records. 2021 will be different for me in that I will release my first solo record on my own. I wrote and produced the album and did a fair amount of the engineering as well. Since this project has been a DIY effort I thought it would be fitting to see it through to its physical release. The first single will be available digitally on streaming services January 1st 2021. There is not yet an official release date for the physical LP. If you want to keep up with new content and releases please subscribe to the <a href="https://www.youtube.com/channel/UCP1aOHajrPpdFwc2aR_klYg">Kommune Youtube channel</a> or follow me on <a href="https://www.instagram.com/kommune.records/">instagram</a>. Many thanks and much love xoxo - Zack</p>
+          <p>Hello! It's Zack here again. I started Kommune Records as an outlet to release my music. I have no idea how far this idea will go but I am committed to giving it my best shot.</p>
+          <p>Up until this point I have been mostly a guitarist and songwriter playing around San Diego and my recordings have been released by my friends at Tee Pee Records. </p>
+          <p>2021 will be different for me in that I will release my first solo record on my own. I wrote and produced the album and did a fair amount of the engineering as well. Since this project has been a DIY effort I thought it would be fitting to see it through to its physical release.</p>
+          <p>The first single will be available digitally on streaming services January 1st 2021. There is not yet an official release date for the physical LP. If you want to keep up with new content and releases please subscribe to the <a href="https://www.youtube.com/channel/UCP1aOHajrPpdFwc2aR_klYg">Kommune Youtube channel</a> or follow me on <a href="https://www.instagram.com/kommune.records/">Instagram</a>.</p>
+          <p>Many thanks and much love xoxo - Zack</p>
         </div>
 
         <div id="production" class="nav-page hidden">
           <h2>CONTACT</h2>
-          <p>Personal contact: zactchmoblooze@gmail.com</p>
-          <p>Label contact: Kommunerecords@gmail.com</p>
+          <p>Personal contact: <a href="mailto:zactchmoblooze@gmail.com">zactchmoblooze@gmail.com</a></p>
+          <p>Label contact: <a href="mailto:Kommunerecords@gmail.com">Kommunerecords@gmail.com</a></p>
         </div>
       </div>
     </div>
+    <br><br><br><br>
   </body>
 </html>
 
 
 <script type="text/javascript">
   $(document).ready(function() {
+    // NAVIGATION CLICK HANDLER
     $('.nav-item').click(function(event) {
       // don't follow the link
       event.preventDefault();
@@ -86,6 +113,6 @@
       $('.nav-page').addClass('hidden');
       // show the appropriate nav page
       $(`#${ $(this).data('content-id') }`).removeClass('hidden');
-    })
+    });
   })
 </script>
